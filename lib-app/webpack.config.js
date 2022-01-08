@@ -2,7 +2,7 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 module.exports = {
   entry: './index.js',
-  mode: 'development',
+  mode: 'production',
   devtool: 'hidden-source-map',
   output: {
     publicPath: 'https://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3000/',
