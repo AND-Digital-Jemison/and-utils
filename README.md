@@ -29,3 +29,8 @@ It is a pure host.
 - `npm run start`
 
 after all the commands done, open your browser at `http://localhost:3002`, open the dev-tool's network tab to see resources loading details
+
+or 
+
+AWS start the EC2 container and hit
+`http://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3002/`
