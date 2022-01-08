@@ -43,7 +43,12 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: './public/index.html',
       })
-    ]
+    ],
+    devServer: {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      }
+    }
   }
 
   return config;

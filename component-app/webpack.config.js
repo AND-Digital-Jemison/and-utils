@@ -52,4 +52,9 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
+  devServer: {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    }
+  }
 };
