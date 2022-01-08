@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   devtool: 'hidden-source-map',
   output: {
-    publicPath: 'http://localhost:3002/',
+    publicPath: 'https://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3002/',
     clean: true,
   },
   resolve: {
@@ -32,8 +32,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'main_app',
       remotes: {
-        'lib-app': 'lib_app@http://localhost:3000/remoteEntry.js',
-        'component-app': 'component_app@http://localhost:3001/remoteEntry.js',
+        'lib-app': 'lib_app@https://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3000/remoteEntry.js',
+        'component-app': 'component_app@https://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3001/remoteEntry.js',
       },
     }),
     new HtmlWebpackPlugin({
