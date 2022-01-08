@@ -20,10 +20,5 @@ module.exports = {
         './react-dom': 'react-dom',
       },
     }),
-  ],
-  devServer: {
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    }
-  }
+  ]
 };
