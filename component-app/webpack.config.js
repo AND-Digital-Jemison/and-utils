@@ -1,12 +1,14 @@
 const { ModuleFederationPlugin } = require('webpack').container;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+require('dotenv').config({ path: '../.env' });
+
 module.exports = {
   entry: './index.js',
   mode: 'production',
   devtool: 'hidden-source-map',
   output: {
-    publicPath: 'https://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3001/',
+    publicPath: `${process.env.HOST}:3001/`,
     clean: true,
   },
   resolve: {
@@ -43,7 +45,7 @@ module.exports = {
         './ToolTip': './src/ToolTip.jsx',
       },
       remotes: {
-        'lib-app': 'lib_app@https://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3000/remoteEntry.js',
+        'lib-app': `lib_app@${process.env.HOST}:3000/remoteEntry.js`,
       },
     }),
     new HtmlWebpackPlugin({

@@ -1,11 +1,13 @@
 const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
+require('dotenv').config({ path: '../.env' });
+
 module.exports = {
   entry: './index.js',
   mode: 'production',
   devtool: 'hidden-source-map',
   output: {
-    publicPath: 'https://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3000/',
+    publicPath: `${process.env.HOST}:3000/`,
     clean: true,
   },
   module: {},
