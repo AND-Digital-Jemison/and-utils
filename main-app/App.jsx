@@ -34,8 +34,8 @@ export default class App extends React.Component {
                 <p>This will use Webpacks module federation plugin to host a series of webapps using the <strong>Micro-frontend
                     pattern</strong></p>
                 <div style={{'border': 'solid 1pt blue'}}>
-                    There are 3 projects in total that make up this page.<br/>
-                    <p>The 2 boxes below are 2 separate apps combined into this app - <strong>main-app</strong></p>
+                    There are 4 projects in total that make up this page.<br/>
+                    <p>The 3 boxes below are 3 separate apps combined into this app - <strong>main-app</strong></p>
                 </div>
 
                 <div style={{'border': 'solid 1pt black', 'margin-top': '30px'}}>

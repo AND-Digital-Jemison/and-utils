@@ -39,3 +39,5 @@ AWS start the EC2 container
 - update the .env with the url but use http://
 - run the steps above
 - go to http://<url>:3002
+
+
