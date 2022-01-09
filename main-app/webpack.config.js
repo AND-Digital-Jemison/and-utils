@@ -38,6 +38,7 @@ module.exports = (env, argv) => {
         remotes: {
           'lib-app': `lib_app@${process.env.HOST}:3000/remoteEntry.js`,
           'component-app': `component_app@${process.env.HOST}:3001/remoteEntry.js`,
+          'node_app': `node_app@${process.env.HOST}:3004/remoteEntry.js`,
         },
       }),
       new HtmlWebpackPlugin({

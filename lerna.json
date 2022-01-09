@@ -1,4 +1,4 @@
 {
-  "packages": ["lib-app", "component-app", "main-app"],
+  "packages": ["lib-app", "component-app","node-app", "main-app"],
   "version": "0.0.0"
 }

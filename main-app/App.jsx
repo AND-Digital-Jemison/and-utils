@@ -2,6 +2,7 @@ import React from 'lib-app/react';
 import Button from 'component-app/Button';
 import Dialog from 'component-app/Dialog';
 import ToolTip from 'component-app/ToolTip';
+import NodeApp from 'node_app/App';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -54,6 +55,9 @@ export default class App extends React.Component {
                     <Dialog switchVisible={this.handleSwitchVisible} visible={this.state.dialogVisible}/>
                     <h4>hover me please!</h4>
                     <ToolTip content="hover me please" message="Hello,world!"/>
+                </div>
+                <div style={{'border': 'solid 1pt black', 'margin-top': '30px'}}>
+                  <NodeApp/>
                 </div>
             </div>
         );
