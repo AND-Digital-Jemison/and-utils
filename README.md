@@ -38,7 +38,7 @@ AWS start the EC2 container
   ec2-18-203-68-106.eu-west-1.compute.amazonaws.com
 - update the .env with the url but use http://
 - run the steps above
-- go to http://<url>:3002
+- go to http://url:3002
 
 ![picture of page](https://github.com/AND-Digital-Jemison/and-utils/blob/master/docs/img.png)
 
