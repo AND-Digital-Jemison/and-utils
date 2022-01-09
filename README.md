@@ -32,5 +32,10 @@ after all the commands done, open your browser at `http://localhost:3002`, open 
 
 or 
 
-AWS start the EC2 container and hit
-`http://ec2-3-250-133-129.eu-west-1.compute.amazonaws.com:3002/`
+AWS start the EC2 container
+- get the url (ip4) eg.
+  Public IPv4 DNS
+  ec2-18-203-68-106.eu-west-1.compute.amazonaws.com
+- update the .env with the url but use http://
+- run the steps above
+- go to http://<url>:3002
