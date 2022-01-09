@@ -32,7 +32,7 @@ after all the commands done, open your browser at `http://localhost:3002`, open 
 
 or 
 
-AWS start the EC2 container
+AWS start  and-utils EC2 container
 - get the url (ip4) eg.
   Public IPv4 DNS
   ec2-18-203-68-106.eu-west-1.compute.amazonaws.com
